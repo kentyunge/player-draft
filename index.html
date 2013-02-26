@@ -8,7 +8,47 @@
 </head>
 
 <body>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="brand" href="#">Player Draft</a>
+        <div class="nav-collapse collapse">
+          <form class="navbar-form pull-right">
+            <input class="span2" type="text" placeholder="Email">
+            <input class="span2" type="password" placeholder="Password">
+            <button type="submit" class="btn">Sign in</button>
+          </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
+
   <div class="container">
+    <table class="table table-striped">
+      <thead>
+        <th>Player Name</th>
+        <th>Team Name</th>
+        <th>Position</th>
+        <th>PPG</th>
+        <th>Seed</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Keith Appling</td>
+          <td>Michigan State</td>
+          <td>G</td>
+          <td>14.5</td>
+          <td>2</td>
+          <td width="100px"><button class="btn btn-primary"><i class="icon-white icon-plus"></i> Draft</button></td>
+        </tr>
+      </tbody>
+    </table>
+
     <ng:include src="'partials/chat.html'"></ng:include>
   </div>
 
