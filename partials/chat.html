@@ -1,13 +1,17 @@
-      <div ng-controller="ChatCtrl">
-          <form class="form-horizontal">
-              <input type="text" ng-model="message">
-              <button class="btn" ng-click="sendMessage()">Send Message</button>
-          </form>
-          <div id="chatDiv" class="chatDiv span4">
-              <table id="chatTable" class="table table-striped">
-                  <tr ng-repeat="chatMessage in chatMessages" scroll-to>
-                      <td>{{chatMessage.message}}</td>
-                  </tr>
-              </table>
-          </div>
+      <div ng-controller="ChatCtrl" class="pull-right span5">
+
+        <div id="chatDiv" class="chatDiv">
+            <table id="chatTable" class="table table-striped">
+                <tr ng-repeat="chatMessage in chatMessages" scroll-to>
+                    <td width="100px">{{chatMessage.email}}</td>
+                    <td>{{chatMessage.message}}</td>
+                </tr>
+            </table>
+        </div>
+        <p>
+        <form class="form-horizontal">
+            <input type="text" ng-model="message">
+            <button class="btn" ng-click="sendMessage()">Send Message</button>
+        </form>
+        </p>
       </div>
