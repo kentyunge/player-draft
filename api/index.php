@@ -201,10 +201,10 @@ function getPlayers($team_id) {
 /* End Parse Functions */
 
 function getConnection() {
-    $dbhost="localhost";
-    $dbuser="they4810";
-    $dbpass="Brickey!2";
-    $dbname="they4810_draft";
+    $dbhost="";
+    $dbuser="";
+    $dbpass="";
+    $dbname="";
     $dbh = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);  
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     return $dbh;
